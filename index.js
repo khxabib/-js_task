@@ -119,8 +119,92 @@
 //
 // Дана строка. Сделайте заглавной последнюю букву каждого слова в этой строке.
 
+// const string = str => {
+// 	let words = str.split(' ')
+// 	for (let i = 0; i < words.length; i++) {
+// 		let word = words[i]
+// 		words[i] = word.slice(0, -1) + word.slice(-1).toUpperCase()
+// 	}
+// 	return words.join(' ')
+// }
+// let str = 'xabib kamron bib momo'
+// console.log(string(str))
+
+// Дан следующая структура:
+// Найдите сумму элементов этой структуры.
+// let data = [
+// 	{
+// 		1: [1, 2, 3],
+// 		2: [1, 2, 3],
+// 		3: [1, 2, 3],
+// 	},
+// 	{
+// 		1: [1, 2, 3],
+// 		2: [1, 2, 3],
+// 		3: [1, 2, 3],
+// 	},
+// 	{
+// 		1: [1, 2, 3],
+// 		2: [1, 2, 3],
+// 		3: [1, 2, 3],
+// 	},
+// ];
+
+// const dataObj = data => {
+// 	let sum = 0
+// 	for (let i = 0; i < data.length; i++) {
+// 		for (let key in data[i]) {
+// 			let result = data[i][key]
+// 			for (let j = 0; j < result.length; j++) {
+// 				sum += result[j]
+// 			}
+// 		}
+// 	}
+// 	return sum
+// }
+// let data = [
+// 	{
+// 		1: [1, 2, 3],
+// 		2: [1, 2, 3],
+// 		3: [1, 2, 3],
+// 	},
+// 	{
+// 		1: [1, 2, 3],
+// 		2: [1, 2, 3],
+// 		3: [1, 2, 3],
+// 	},
+// 	{
+// 		1: [1, 2, 3],
+// 		2: [1, 2, 3],
+// 		3: [1, 2, 3],
+// 	},
+// ]
+
+// console.log(dataObj(data))
+
+// Дан массив со числами. Проверьте, что все числа из этого массива содержат в себе цифру 3.
+
+// const array = arr => {
+// 	for (let i = 0; i < arr.length; i++) {
+// 		let numStr = arr[i].toString()
+// 		if (numStr.includes('3')) {
+// 			return true
+// 		}
+// 	}
+// 	return false
+// }
+
+// let arr = [123, 124]
+
+// console.log('>>>', array(arr))
+
+// Дана строка в формате:
+// 'kebab-case'
+// Преобразуйте ее в формат:
+// 'snake_case'
+
 const string = str => {
 	return str
 }
-let str = 'xabib kamron bib momo'
+let str = 'kebab-case'
 console.log(string(str))
