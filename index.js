@@ -203,8 +203,28 @@
 // Преобразуйте ее в формат:
 // 'snake_case'
 
-const string = str => {
-	return str
-}
-let str = 'kebab-case'
-console.log(string(str))
+// const string = str => {
+// 	let snakeAdd = 'snake_'
+// 	let starArr = str.split('-')
+// 	return snakeAdd + starArr[1]
+// }
+// let str = 'kebab-case'
+// console.log(string(str))
+
+// Дана строка в формате:
+
+// 'snake_case'
+// Преобразуйте ее в формат:
+
+// 'camelCase'
+
+// const stringCamelCase = str => {
+// 	let camelCase = str.split('_')
+// 	let result = camelCase[0]
+// 	for (let i = 1; i < camelCase.length; i++) {
+// 		result += camelCase[i].charAt(0).toUpperCase() + camelCase[i].slice(1)
+// 	}
+// 	console.log('>>>', result)
+// }
+// let str = 'snake_case'
+// console.log(stringCamelCase(str))
